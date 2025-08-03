@@ -3,10 +3,14 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+@app.get("/projects")
+def get_projects():
+    return projects
+
 # Permitir acceso desde HTML/JS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Puedes restringir esto a ["http://localhost"] si prefieres
+    allow_origins=["*"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -19,6 +23,3 @@ projects = [
     {"id": 3, "nombre": "Gestor de tareas", "descripcion": "App de productividad"}
 ]
 
-@app.get("/projects")
-def get_projects():
-    return projects
