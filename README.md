@@ -85,17 +85,17 @@ http://127.0.0.1:8000/projects
 ## 🧪 Pruebas de consumo de API
 
 ### 1. Postman
-![Postman](Postman.png)
+![Postman](/img/Postman.png)
 
 ---
 
 ### 2. Thunder Client
-![ThunderClient](ThunderClient.png)
+![ThunderClient](img/ThunderClient.png)
 
 ---
 
 ### 3. Index.html
-![index.html](index.png)
+![index.html](/img/index.png)
 
 ---
 
